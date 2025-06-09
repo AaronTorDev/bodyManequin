@@ -4,17 +4,15 @@
 	<head>
 		<title>BodyVisualiser</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
-		
-		<div id="info">BodyVisualiser for Valentina Project</div>
-        <div id="info"><a href="female.html">Switch to female body.</a></div>
-		<div id="info"><a href="kid.html">Switch to kid's body.</a></div>
+		<div id="info">Maniqui</div>
+		<div id="info"><a href="https://azure-and-bloom.vercel.app/"></a>Volver a la Página Principal</a></div>
 		<div id="container"></div>
 		
+
 		<script src="js/three.js"></script>
 		
 		<script src="js/UCSCharacter.js"></script>
@@ -91,7 +89,7 @@
 				}
 				
 				var loader = new THREE.XHRLoader();
-				loader.load("models/skinned/testconfig.json", function ( text ) {
+				loader.load("models/skinned/femaleconfig.json", function ( text ) {
 
 					var config = JSON.parse( text );
 					character.loadParts( config );
